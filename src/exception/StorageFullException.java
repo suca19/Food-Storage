@@ -1,7 +1,7 @@
 package exception;
 
 public class StorageFullException extends RuntimeException {
-    public StorageFullException() {
-        super("Storage is full");
+    public StorageFullException(int capacity) {
+        super("Storage is full with capacity: " + capacity);
     }
 }
