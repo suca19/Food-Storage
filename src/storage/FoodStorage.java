@@ -4,6 +4,7 @@ import model.FoodItem;
 import exception.StorageEmptyException;
 import exception.StorageFullException;
 
+// Fixed-size circular deque: items can be added/removed at both ends in O(1)
 public class FoodStorage {
 
     public static final int MAX_CAPACITY = 8;
